@@ -1,10 +1,12 @@
 from flask import Flask, url_for, request, redirect
 from jinja2 import Template, Environment, FileSystemLoader
 import json
+import os
 File_loader = FileSystemLoader("templates")
 env = Environment(loader=File_loader)
 app = Flask(__name__)
-with open("form.json") as json_file:
+print(os.getcwd())
+with open("OndaJson\\form.json") as json_file:
     myjson = json.load(json_file)
 @app.route('/form', methods=["GET", "POST"])
 def form():
