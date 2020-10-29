@@ -1,0 +1,28 @@
+{
+    "headers": {
+        "0":"id",
+        "1":"name",
+        "2":"age", 
+        "3":"uni"
+    },
+    "data":[
+        {
+            "id": "0001",
+            "name": "Carlos",
+            "age": "19",
+            "uni": "UFM"
+        },
+        {
+            "id": "0002",
+            "name": "Sophia",
+            "age": "Cake",
+            "uni": "UVG"
+        },
+        {
+            "id": "0003",
+            "name": "Hosman",
+            "age": "Cake",
+            "uni": "URL"
+        }
+    ]
+}

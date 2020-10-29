@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}Formulario{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block resto %}
+<body>
+    <h2>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label>Id</label>
+                <input type="text" class="form-control" name="type" placeholder="Enter Id">
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="type" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" class="form-control" name="type" placeholder="Enter age">
+            </div>
+            <div class="form-group">
+                <label>University</label>
+                <input type="text" class="form-control" name="type" placeholder="Enter uni">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </h2>
+    
+</body>
+{% endblock %}
+{% block body %}
+  {{ super() }} 
+{% endblock %}
