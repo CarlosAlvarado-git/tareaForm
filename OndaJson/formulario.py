@@ -2,10 +2,10 @@ from flask import Flask, url_for, request, redirect
 from jinja2 import Template, Environment, FileSystemLoader
 import json
 import os
-File_loader = FileSystemLoader("OndaJson\\templates")
+File_loader = FileSystemLoader("templates")
 env = Environment(loader=File_loader)
 app = Flask(__name__)
-with open("OndaJson\\form.json") as json_file:
+with open("form.json") as json_file:
     myjson = json.load(json_file)
 
 
@@ -29,4 +29,4 @@ def index():
     return template.render(my_json=myjson['data'], headers=myjson['headers'])
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
