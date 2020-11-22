@@ -7,9 +7,7 @@ env = Environment(loader=File_loader)
 app = Flask(__name__)
 with open("form.json") as json_file:
     myjson = json.load(json_file)
-
-
-
+    
 @app.route('/form', methods=["GET", "POST"])
 def form():
     if request.method == 'POST':
